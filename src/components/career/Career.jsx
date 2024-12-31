@@ -137,7 +137,7 @@ export default function Career() {
             </div>
             <div className="text-center">
               <button type="button" className="btn btn-primary custom-btn">
-                Contact Us
+                Apply Now
               </button>
             </div>
           </form>

@@ -289,10 +289,16 @@ p.card-text {
   
   /*** About us ***/
   
+  .about-us h2 {
+    font-size: 55px !important;
+    font-weight: 400 !important;
+  }
+
   .about-us h2,
   .about-us p {
     color: #fff;
     font-weight: 100;
+    font-size: 20px;
   }
   
   .about-us {
@@ -576,6 +582,8 @@ p.card-text {
   }
   .our-product .product-card .card .card-body {
     display: flex;
+    background-color: #00000057;
+    border-radius: 15px;
     flex-wrap: wrap;
     align-items: flex-end;
     align-content: flex-end;

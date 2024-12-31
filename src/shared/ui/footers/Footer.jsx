@@ -50,18 +50,18 @@ function Footer() {
           </div>
           <div className="row">
             <div className="d-flex pt-2 gap-3 pb-4 social-icon">
-              <Link className="btn btn-square me-1" href="">
+              <a className="btn btn-square me-1" href="https://x.com/suhoratech">
                 <i className="fab fa-twitter" />
-              </Link>
-              <Link className="btn btn-square me-1" href="">
+              </a>
+              <a className="btn btn-square me-1" href="https://www.facebook.com/suhoratech">
                 <i className="fab fa-facebook-f" />
-              </Link>
-              <Link className="btn btn-square me-1" href="">
+              </a>
+              <a className="btn btn-square me-1" href="https://www.youtube.com/@suhora">
                 <i className="fab fa-youtube" />
-              </Link>
-              <Link className="btn btn-square me-0" href="">
+              </a>
+              <a className="btn btn-square me-0" href="https://www.linkedin.com/company/suhora">
                 <i className="fab fa-linkedin-in" />
-              </Link>
+              </a>
             </div>
           </div>
           <div className="row copyright">
@@ -69,10 +69,9 @@ function Footer() {
               &copy;2024 Suhora | <Link to="/">Space Analytics Simplified</Link>, All
               Right Reserved. | <Link to="/">Privacy Policy</Link>
             </div>
-            <div className="col-md-6 text-center text-md-end">
-              {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
+            {/* <div className="col-md-6 text-center text-md-end">
              Designed and Developed by <Link target="_blank" to="https://fluentechs.com/">Fluentech Solutions</Link> 
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
