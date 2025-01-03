@@ -349,7 +349,7 @@ function ImagingCapabilities() {
                     />
                     <div className="card-body">
                       <p>
-                        312, Tower-B, Noida One, Sector-62, Noida, Uttar Pradesh,
+                        313, Tower-B, Noida One, Sector-62, Noida, Uttar Pradesh,
                         India, 201309
                       </p>
                     </div>

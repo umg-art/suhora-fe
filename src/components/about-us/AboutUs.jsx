@@ -299,7 +299,7 @@ export default function AboutUs() {
                     <p className="card-text">CEO and Co-Founder</p>
                   </div>
                   <div className="social-icon">
-                    <a href="javascript:void(0);">
+                    <a target="_blank" href="https://www.linkedin.com/in/krishanuacharya/">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -319,7 +319,7 @@ export default function AboutUs() {
                     <p className="card-text">CTO and Co-Founder</p>
                   </div>
                   <div className="social-icon">
-                    <a href="javascript:void(0);">
+                    <a target="_blank" href="https://www.linkedin.com/in/rupeshgupte/">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -339,7 +339,7 @@ export default function AboutUs() {
                     <p className="card-text">COO and Co-Founder</p>
                   </div>
                   <div className="social-icon">
-                    <a href="javascript:void(0);">
+                    <a target="_blank" href="https://www.linkedin.com/in/amitkumarsaini/">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -359,7 +359,7 @@ export default function AboutUs() {
                     <p className="card-text">Director-Strategy</p>
                   </div>
                   <div className="social-icon">
-                    <a href="javascript:void(0);">
+                    <a target="_blank" href="https://www.linkedin.com/in/tanmoy-adhikary-8132002/">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -379,7 +379,7 @@ export default function AboutUs() {
                     <p className="card-text">Advisor</p>
                   </div>
                   <div className="social-icon">
-                    <a href="javascript:void(0);">
+                    <a target="_blank" href="https://www.linkedin.com/in/surojitbose/">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -399,7 +399,7 @@ export default function AboutUs() {
                     <p className="card-text">Advisor</p>
                   </div>
                   <div className="social-icon">
-                    <a href="javascript:void(0);">
+                    <a target="_blank" href="https://www.linkedin.com/in/cdr-navneet-kaushik-veteran-98964b82/">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>

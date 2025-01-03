@@ -17,7 +17,7 @@ function Event() {
     try {
       const res = await axios.get(`${baseUrl}/api/events`,{
         headers: {
-          'Authorization': `Bearer hsdguefg65sws%xsn$zsxs`  // Use Bearer token for authorization
+          'Authorization': `Bearer hsdguefg65sws%xsn$zsxs`
         }
       });
       // Filter published blogs
@@ -75,7 +75,7 @@ function Event() {
                         className="card-text"
                         dangerouslySetInnerHTML={{ __html: item.description }}
                       />
-                  <a href="javascript:void(0);" className="btn btn-light">
+                  <a href={"/event-news/" + item.id} className="btn btn-light">
                     Continue Reading
                   </a>
                 </div>

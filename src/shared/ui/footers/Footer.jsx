@@ -67,11 +67,11 @@ function Footer() {
           <div className="row copyright">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
               &copy;2024 Suhora | <Link to="/">Space Analytics Simplified</Link>, All
-              Right Reserved. | <Link to="/">Privacy Policy</Link>
+              Right Reserved.
             </div>
-            {/* <div className="col-md-6 text-center text-md-end">
+             <div className="col-md-6 text-center text-md-end">
              Designed and Developed by <Link target="_blank" to="https://fluentechs.com/">Fluentech Solutions</Link> 
-            </div> */}
+            </div> 
           </div>
         </div>
       </div>

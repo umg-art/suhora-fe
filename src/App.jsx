@@ -11,6 +11,7 @@ import DefenceIntelligence from './components/defence-intelligence/DefenceIntell
 import ImagingCapabilities from './components/imaging-capabilities/ImagingCapabilities';
 import AboutUs from './components/about-us/AboutUs';
 import ImageLibrary from './components/image-library/ImageLibrary';
+import DetailEvent from './components/read-event/DetailEvent';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/image-library" element={<ImageLibrary />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/event-news" element={<Event />} />
+          <Route path="/event-news/:id" element={<DetailEvent />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

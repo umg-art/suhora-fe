@@ -555,7 +555,7 @@ function HomePage() {
                           data enabling users to to explore, task and analyze
                           satellite data for a spectrum of applications.
                         </p>
-                        <Link to="https://spade.suhora.com/" target="_blank" className="btn btn-primary">
+                        <Link to="/imaging-capabilities" target="_blank" className="btn btn-primary">
                           Explore
                         </Link>
                       </div>
