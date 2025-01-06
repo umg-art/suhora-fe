@@ -46,7 +46,7 @@ export default function Career() {
     formData.append("resume", resume);
 
     try {
-      const response = await fetch("http://localhost:7080/api/job-application/apply", {
+      const response = await fetch(baseUrl+"/api/job-application/apply", {
         method: "POST",
         body: formData,
         headers: {
@@ -225,12 +225,15 @@ export default function Career() {
             </div>
 
             <div className="d-flex gap-2 mt-4 job-department">
-              <button
+              {
+                filteredJobs.length > 0 ? <button
                 className="rounded-dep"
                 onClick={(event) => handelDepartment(event, "all")}
               >
                 All
-              </button>
+              </button> : null
+              }
+              
               {uniqueDepartments.map((department, index) => (
                 <button
                   key={index}
@@ -241,7 +244,7 @@ export default function Career() {
                 </button>
               ))}
             </div>
-<hr />
+             <hr />
             <div className="job-cards-container">
               {filteredJobs.length > 0 ? (
                 filteredJobs.map((job) => (
@@ -273,7 +276,7 @@ export default function Career() {
                   </div>
                 ))
               ) : (
-                <p>No jobs found in this department.</p>
+                <p>There are no current opening found.</p>
               )}
               {/* // the job modal showing  */}
               {isModalOpen && selectedJob && (

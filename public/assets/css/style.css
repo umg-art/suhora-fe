@@ -51,7 +51,7 @@ h3 {
 .btn-transparent {
   border: 1px solid #fff;
   font-size: 14px;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 4px 18px;
   color: #fff;
   width: max-content;
@@ -93,7 +93,7 @@ p.card-text {
 }
 .onion-career{
   position: absolute;
-  background-color: #0000004d;
+  background-color: #0000002b;
   top: 0;
   width: 100%;
   left: 0;

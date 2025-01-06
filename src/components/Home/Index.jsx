@@ -548,7 +548,7 @@ function HomePage() {
                     >
                       <div className="card-body">
                         {/* <h5 className="card-title">SPADE</h5> */}
-                         <img src="./assets/images/SPADE Powered by SUHORA.png" alt='spade image' />
+                         <img src="./assets/images/spade_logo-new.png" height={"47px"} alt='spade image' />
                         <p className="card-text product-card-text">
                           A unified SaaS platform offering seamless access to
                           250 + sensors encompassing optical thermal and SAR
