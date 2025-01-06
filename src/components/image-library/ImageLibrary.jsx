@@ -76,12 +76,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Pangong-meter.png"
+                    href="./assets/images/Pangong-Tso.webp"
                     data-fancybox="gallery"
                     data-caption="Pangong Tso 1 Meter"
                   >
                     <img
-                      src="./assets/images/Pangong-meter.png"
+                      src="./assets/images/Pangong-Tso.webp"
                       alt="Pangong Tso"
                     />
                   </a>
@@ -94,12 +94,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Delhi-Yamuna.png"
+                    href="./assets/images/delhi_yamuna.webp"
                     data-fancybox="gallery"
                     data-caption="Delhi Yamuna 2.5 Meter"
                   >
                     <img
-                      src="./assets/images/Delhi-Yamuna.png"
+                      src="./assets/images/delhi_yamuna.webp"
                       alt="Delhi Yamuna 2.5 Meter"
                     />
                   </a>
@@ -112,12 +112,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Haryana_2.5-meter.png"
+                    href="./assets/images/haryana.webp"
                     data-fancybox="gallery"
                     data-caption="Haryana 2.5 Meter"
                   >
                     <img
-                      src="./assets/images/Haryana_2.5-meter.png"
+                      src="./assets/images/haryana.webp"
                       alt="Haryana 2.5 Meter"
                     />
                   </a>
@@ -130,12 +130,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Chungthang_3.5.png"
+                    href="./assets/images/Chungthang.webp"
                     data-fancybox="gallery"
                     data-caption="Chungthang 3.5 meter"
                   >
                     <img
-                      src="./assets/images/Chungthang_3.5.png"
+                      src="./assets/images/Chungthang.webp"
                       alt="Chungthang"
                     />
                   </a>
@@ -148,12 +148,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Rishikesh-meter.png"
+                    href="./assets/images/rishikesh.webp"
                     data-fancybox="gallery"
                     data-caption="Rishikesh 3.5 meter"
                   >
                     <img
-                      src="./assets/images/Rishikesh-meter.png"
+                      src="./assets/images/rishikesh.webp"
                       alt="Rishikesh"
                     />
                   </a>
@@ -166,12 +166,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Assam_50.png"
+                    href="./assets/images/Assam.webp"
                     data-fancybox="gallery"
                     data-caption="Assam 50 Centimeters"
                   >
                     <img
-                      src="./assets/images/Assam_50.png"
+                      src="./assets/images/Assam.webp"
                       alt="Assam 50 Centimeters"
                     />
                   </a>
@@ -184,12 +184,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Mandla.png"
+                    href="./assets/images/mandla_port.webp"
                     data-fancybox="gallery"
                     data-caption="Mandla port Assam 50 Centimeters"
                   >
                     <img
-                      src="./assets/images/Mandla.png"
+                      src="./assets/images/mandla_port.webp"
                       alt="Mandla port Assam 50 Centimeters"
                     />
                   </a>
@@ -209,12 +209,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Nagasaki-Japan.png"
+                    href="./assets/images/Nagasaki_Japan.webp"
                     data-fancybox="gallery"
                     data-caption="Nagasaki-Japan L- Band | 3 meter"
                   >
                     <img
-                      src="./assets/images/Nagasaki-Japan.png"
+                      src="./assets/images/Nagasaki_Japan.webp"
                       alt="Nagasaki-Japan"
                     />
                   </a>
@@ -227,11 +227,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Palwal-Haryana.jpg"
+                    href="./assets/images/Palwal,Haryana.webp"
                     data-fancybox="gallery"
                     data-caption="Palwal, Haryana L-Band | 10X5 meter"
                   >
-                    <img src="./assets/images/Palwal-Haryana.jpg" alt="Palwal" />
+                    <img src="./assets/images/Palwal,Haryana.webp" alt="Palwal" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -242,11 +242,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Vellore.jpg"
+                    href="./assets/images/Vellore,Tamil_Nadu.webp"
                     data-fancybox="gallery"
                     data-caption="Vellore, TamilNadu L-Band | 10X5 meter"
                   >
-                    <img src="./assets/images/Vellore.jpg" alt="Vellore" />
+                    <img src="./assets/images/Vellore,Tamil_Nadu.webp" alt="Vellore" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -257,12 +257,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Mumbai_X-Band-meter.png"
+                    href="./assets/images/Mumbai.webp"
                     data-fancybox="gallery"
                     data-caption="Mumbai X- Band | 3 meter"
                   >
                     <img
-                      src="./assets/images/Mumbai_X-Band-meter.png"
+                      src="./assets/images/Mumbai.webp"
                       alt="Mumbai X- Band | 3 meter"
                     />
                   </a>
@@ -275,11 +275,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Gujrat_X-Band.png"
+                    href="./assets/images/Gujrat.webp"
                     data-fancybox="gallery"
                     data-caption="Gujrat X-Band | 15 meter"
                   >
-                    <img src="./assets/images/Gujrat_X-Band.png" alt="Gujrat" />
+                    <img src="./assets/images/Gujrat.webp" alt="Gujrat" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -290,12 +290,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Australlia_X-Band.png"
+                    href="./assets/images/Australlia.webp"
                     data-fancybox="gallery"
                     data-caption="Australlia X-Band | 50 centimeter"
                   >
                     <img
-                      src="./assets/images/Australlia_X-Band.png"
+                      src="./assets/images/Australlia.webp"
                       alt="Australlia"
                     />
                   </a>
@@ -308,11 +308,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Kolkata_X-Band.png"
+                    href="./assets/images/kolkata.webp"
                     data-fancybox="gallery"
                     data-caption="Kolkata X-Band | 50 centimeter"
                   >
-                    <img src="./assets/images/Kolkata_X-Band.png" alt="Kolkata" />
+                    <img src="./assets/images/kolkata.webp" alt="Kolkata" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -330,12 +330,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Jamnagar_oil_refinery.png"
+                    href="./assets/images/Jamnagar_oil_refinery.webp"
                     data-fancybox="gallery"
                     data-caption="Jamnagar Oil Refinery 3.5 meter"
                   >
                     <img
-                      src="./assets/images/Jamnagar_oil_refinery.png"
+                      src="./assets/images/Jamnagar_oil_refinery.webp"
                       alt="Jamnagar_oil_refinery"
                     />
                   </a>
@@ -348,11 +348,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Djibouti_Port.png"
+                    href="./assets/images/Djibouti_Port.webp"
                     data-fancybox="gallery"
                     data-caption="Djibouti_Port"
                   >
-                    <img src="./assets/images/Djibouti_Port.png" alt="Djibouti_Port" />
+                    <img src="./assets/images/Djibouti_Port.webp" alt="Djibouti_Port" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -363,11 +363,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Ruwais_oilrefinery.png"
+                    href="./assets/images/Ruwais_oilrefinery.webp"
                     data-fancybox="gallery"
                     data-caption="Djibouti_Port"
                   >
-                    <img src="./assets/images/Ruwais_oilrefinery.png" alt="Ruwais_oilrefinery" />
+                    <img src="./assets/images/Ruwais_oilrefinery.webp" alt="Ruwais_oilrefinery" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -378,11 +378,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Vizag_Port.png"
+                    href="./assets/images/Vizag_Port.webp"
                     data-fancybox="gallery"
                     data-caption="Djibouti_Port"
                   >
-                    <img src="./assets/images/Vizag_Port.png" alt="Vizag_Port" />
+                    <img src="./assets/images/Vizag_Port.webp" alt="Vizag_Port" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -400,12 +400,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Aurangabad_DSM.png"
+                    href="./assets/images/DSM_50_CM_AURANGABAD.webp"
                     data-fancybox="gallery"
                     data-caption="Aurangabad DSM 50 centimeter"
                   >
                     <img
-                      src="./assets/images/Aurangabad_DSM.png"
+                      src="./assets/images/DSM_50_CM_AURANGABAD.webp"
                       alt="Aurangabad"
                     />
                   </a>
@@ -418,12 +418,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Aurangabad_DTM.png"
+                    href="./assets/images/DTM_50_CM_AURANGABAD.webp"
                     data-fancybox="gallery"
                     data-caption="Aurangabad DTM 50 centimeter"
                   >
                     <img
-                      src="./assets/images/Aurangabad_DTM.png"
+                      src="./assets/images/DTM_50_CM_AURANGABAD.webp"
                       alt="Aurangabad"
                     />
                   </a>
@@ -436,11 +436,11 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Nasik_DSM.png"
+                    href="./assets/images/DSM_Nasik_50CM.webp"
                     data-fancybox="gallery"
                     data-caption="Nasik DSM 50 centimeter"
                   >
-                    <img src="./assets/images/Nasik_DSM.png" alt="Nasik" />
+                    <img src="./assets/images/DSM_Nasik_50CM.webp" alt="Nasik" />
                   </a>
                 </div>
                 <div className="card-detial">
@@ -451,12 +451,12 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Nasik_DTM-50-centimeter.png"
+                    href="./assets/images/DTM_Nasik_50CM.webp"
                     data-fancybox="gallery"
                     data-caption="Aurangabad DTM 50 centimeter"
                   >
                     <img
-                      src="./assets/images/Nasik_DTM-50-centimeter.png"
+                      src="./assets/images/DTM_Nasik_50CM.webp"
                       alt="Nasik"
                     />
                   </a>
