@@ -12,6 +12,7 @@ import ImagingCapabilities from './components/imaging-capabilities/ImagingCapabi
 import AboutUs from './components/about-us/AboutUs';
 import ImageLibrary from './components/image-library/ImageLibrary';
 import DetailEvent from './components/read-event/DetailEvent';
+import DetailBlog from './components/read-event/DetailBlog';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" index element={<HomePage />} />
           <Route path="/career" element={<Career />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:id" element={<DetailBlog />} />
           <Route path="/defence-intelligence" element={<DefenceIntelligence />} />
           <Route path="/disaster-insurance" element={<DisasterInsurance />} />
           <Route path='/imaging-capabilities/' element={<ImagingCapabilities />} />

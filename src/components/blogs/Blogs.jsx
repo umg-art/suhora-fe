@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { baseUrl } from "../../base";
+import { Link } from "react-router-dom";
 
 
 export default function Blogs() {
@@ -32,7 +33,7 @@ export default function Blogs() {
   // Function to format the date
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    const month = String(date.getMonth() + 1).padStart(2, "0");  // Months are 0-indexed
+    const month = String(date.getMonth() + 1).padStart(2, "0");
     const day = String(date.getDate()).padStart(2, "0");
     const year = date.getFullYear();
   
@@ -72,9 +73,9 @@ export default function Blogs() {
                       <span>By Suhora</span> |  <span>{formatDate(item.publish_at)}</span>{" "}
                     </p>
                   </div>
-                  <a href="javascript:void(0);" className="btn btn-light">
+                  <Link to={`/blogs/${item.id}`} className="btn btn-light">
                     Continue Reading
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
