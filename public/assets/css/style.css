@@ -146,6 +146,9 @@ p.card-text {
   .job-card .job-item {
     margin-top: 3px;
   }
+  .sid-section .image-col .slider-image {
+    object-position: center !important;
+  }
 
   .container .product-slider {
     width: 696px !important;

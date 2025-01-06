@@ -154,12 +154,12 @@ function DefenceIntelligence() {
                     <div className="image-container mirka-product-slider">
                       <img
                         className="image-before slider-image first-mirka"
-                        src="./assets/images/mirka-slider-18-nov2.jpg"
+                        src="./assets/images/mirka-slider.jpg"
                         alt="black and white"
                       />
                       <img
                         className="image-after slider-image"
-                        src="./assets/images/Mirka_Slider_img02_14Nov.jpg"
+                        src="./assets/images/mirka-slider.jpg"
                         alt="color photo"
                       />
                     </div>
