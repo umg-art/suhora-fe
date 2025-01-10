@@ -108,43 +108,30 @@ export default function AboutUs() {
       </section>
       {/* Carousel End */}
       <section className="mission-vission">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-6 p-0 mission-col">
-              <div className="card bg-dark text-white">
-                <img
-                  src="./assets/images/Our-mission-image.png"
-                  className="card-img"
-                  alt="..."
-                />
-                <div className="card-img-overlay">
-                  <h4 className="card-title">Our Mission </h4>
-                  <p className="card-text">
-                    Transforming global surveillance with space analytics to
-                    predict and solve critical security and environmental
-                    challenges.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 p-0 vission-col ">
-              <div className="card bg-dark text-white">
-                <img
-                  src="./assets/images/Our-vision-image.png"
-                  className="card-img"
-                  alt="..."
-                />
-                <div className="card-img-overlay">
-                  <h4 className="card-title">Our Vision</h4>
-                  <p className="card-text">
-                    Shaping a future where Space and Technology work together to
-                    protect and nurture human life.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="onion-mission">
+        <br /><br />
+         <div className="d-flex flex-column container p-5 gap-3">
+           <div>
+              <h1>Our Mission</h1>
+              <p>
+                Our Mission is to harness the power of satellite imagery
+                and  advanced data analytics to deliver timely, accurate, 
+                and actionable insights for businesses, governments,
+                and organizations worldwide.
+              </p>
+           </div>
+           <hr />
+           <div>
+              <h1>Our Vision</h1>
+              <p>
+                we envision a world  where satellite insights illuminate
+                every corner of the planet, empowering humanity to
+                make  smarter, more sustainable decisions. By providing
+                unprecedented access to critical data from space.
+              </p>
+           </div>
+         </div>
+         </div>
       </section>
       <section className="about-suhora-section">
         <div className="overlay" />

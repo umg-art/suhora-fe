@@ -119,9 +119,31 @@ p.card-text {
 .nav-mobile-item {
   display: none !important;
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 680px) {
   .nav-mobile-item {
     display: block !important;
+  }
+  .mission-vission {
+    height: 90vh !important;
+  }
+  .onion-mission {
+    height: 90vh !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mission-vission p {
+    width: 500px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1024px) {
+
+  .mission-vission {
+    height: 55vh !important;
+  }
+  .onion-mission {
+    height: 55vh !important;
   }
 }
 
@@ -1781,27 +1803,35 @@ section.sid-section.our-product h4 {
   width: 100%;
   height: 100%;
 }
-.mission-vission h4,
+.mission-vission {
+  background-image: url("../images/Mission-Vision Image.png");
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.onion-mission {
+  position: absolute;
+  width: 100%;
+  color: white;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+.mission-vission hr {
+  width: 10%;
+  border: 3px solid gray;
+}
 .mission-vission p {
-  color: #000;
+  font-size: 20px;
 }
-.mission-vission .card,
-.mission-vission .card img {
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+.mission-vission h1 {
+  color: white;
 }
-.mission-vission .mission-col .card .card-img-overlay {
-  top: unset;
-  width: 55%;
-  margin-left: auto;
-  padding: 50px;
-}
-.mission-vission .vission-col .card .card-img-overlay {
-  padding: 50px;
-  width: 55%;
-  margin-right: auto;
-}
+
+
 .about-suhora-section {
   background-image: url("../images/About-US-BG.png");
   background-repeat: no-repeat;
