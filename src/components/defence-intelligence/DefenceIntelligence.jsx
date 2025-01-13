@@ -3,6 +3,8 @@ import { useEffect,useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { baseUrl } from "../../base";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+
 
 function DefenceIntelligence() {
   const $ = jQuery.noConflict();
@@ -88,15 +90,15 @@ function DefenceIntelligence() {
     }
   };
 
-  useEffect(() => {
-    const container = document.querySelector(".image-col .container");
-    document
-      .querySelector(".image-col .slider")
-      .addEventListener("input", (e) => {
-        container.style.setProperty("--position", `${e.target.value}%`);
-      });
-    window.scrollTo(0, 0);
-  }, [$]);
+  // useEffect(() => {
+  //   const container = document.querySelector(".image-col .container");
+  //   document
+  //     .querySelector(".image-col .slider")
+  //     .addEventListener("input", (e) => {
+  //       container.style.setProperty("--position", `${e.target.value}%`);
+  //     });
+  //   window.scrollTo(0, 0);
+  // }, [$]);
   return (
     <>
      <ToastContainer />
@@ -149,7 +151,11 @@ function DefenceIntelligence() {
             </div>
             <div className="col-lg-6">
               <div className="image-col h-100">
-                <main className="h-100">
+              <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage style={{filter:"grayscale(100%)"}} className="" src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image two" />}
+             />
+                {/* <main className="h-100">
                   <div className="container h-100">
                     <div className="image-container mirka-product-slider">
                       <img
@@ -162,7 +168,7 @@ function DefenceIntelligence() {
                         src="./assets/images/mirka-slider.jpg"
                         alt="color photo"
                       />
-                    </div>
+                    </div> 
                     <input
                       type="range"
                       min={0}
@@ -233,10 +239,15 @@ function DefenceIntelligence() {
                       </svg>
                     </div>
                   </div>
-                </main>
+                </main> */}
               </div>
             </div>
           </div>
+
+          {/* <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage style={{filter:"grayscale(100%)"}} className="" src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image two" />}
+             /> */}
           <div className="row card-image-col">
             <h4>
               With <span>MIRKA </span> gain actionable Intelligence
