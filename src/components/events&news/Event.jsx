@@ -1,45 +1,48 @@
 import axios from "axios";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { baseUrl } from "../../base";
-
 
 function Event() {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
+  
   const [data, setData] = useState([]);
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
   useEffect(() => {
-    fetch();
+    fetchEvents();
   }, []);
 
-  const fetch = async () => {
+  const fetchEvents = async () => {
     try {
-      const res = await axios.get(`${baseUrl}/api/events`,{
+      const res = await axios.get(`${baseUrl}/api/events`, {
         headers: {
-          'Authorization': `Bearer hsdguefg65sws%xsn$zsxs`
-        }
+          Authorization: `Bearer hsdguefg65sws%xsn$zsxs`,
+        },
       });
-      // Filter published blogs
-      const updated = res.data.data.filter(item => item.status === 'published');
 
+      // Filter published events
+      const updated = res.data.data.filter((item) => item.status === "published");
       setData(updated);
-      console.log("data", updated);
     } catch (error) {
-      console.log("error", error);
+      console.log("Error fetching events", error);
     }
   };
 
-  // Function to format the date
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    const month = String(date.getMonth() + 1).padStart(2, "0");  // Months are 0-indexed
+    const month = String(date.getMonth() + 1).padStart(2, "0");
     const day = String(date.getDate()).padStart(2, "0");
     const year = date.getFullYear();
-  
     return `${month}-${day}-${year}`;
   };
 
+  const openModal = (eventItem) => {
+    setSelectedEvent(eventItem);
+    const modal = new window.bootstrap.Modal(document.getElementById("eventModal"));
+    modal.show();
+  };
 
   return (
     <section className="event-news-section">
@@ -51,78 +54,66 @@ function Event() {
             </div>
           </div>
           <div className="row">
-            {
-               data && data.map((item, index)=>{ 
-                return  (
-            <div className="col-lg-10 card-col">
-              <div className="card">
-                <img
-                  src={`${baseUrl}${item.image}`}
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body p-3 ">
-                  <h3 className="card-title">
-                  {item.title}
-                  </h3>
-                  <div className="post-meta">
-                    <p>
-                      <span>By Suhora</span> | <span>{formatDate(item.publish_at)}</span> |{" "}
-                      <span>Events &amp; News</span> | <span>Comments</span>
-                    </p>
+            {data.map((item, index) => (
+              <div className="col-lg-10 card-col" key={index}>
+                <div className="card">
+                  <img
+                    src={`${baseUrl}${item.image}`}
+                    className="card-img-top"
+                    alt={item.title}
+                  />
+                  <div className="card-body p-3">
+                    <h3 className="card-title">{item.title}</h3>
+                    <div className="post-meta">
+                      <p>
+                        <span>By Suhora</span> | <span>{formatDate(item.publish_at)}</span> |{" "}
+                        <span>Events &amp; News</span> | <span>Comments</span>
+                      </p>
+                    </div>
+                    <div
+                      className="card-text"
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    />
+                    <button className="btn btn-primary" onClick={() => openModal(item)}>
+                      Continue Reading
+                    </button>
                   </div>
-                  <div 
-                        className="card-text"
-                        dangerouslySetInnerHTML={{ __html: item.description }}
-                      />
-                  <a href={"/event-news/" + item.id} className="btn btn-light">
-                    Continue Reading
-                  </a>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Bootstrap Modal */}
+      <div className="modal fade" id="eventModal" tabIndex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="eventModalLabel">
+                {selectedEvent?.title}
+              </h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-               )
-              })
-            }
-            {/* <div className="col-lg-10 card-col">
-              <div className="card">
-                <img
-                  src="./assets/images/SUHORA-SatVu-Contract-Signing-e1717489162101.webp"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body p-3">
-                  <h3 className="card-title">
-                    SUHORA and SatVu form a multi-year strategic alliance to
-                    provide Spaceborne High Resolution Thermal Sensing and
-                    analytics
-                  </h3>
-                  <div className="post-meta">
-                    <p>
-                      <span>By Suhora</span> | <span>June 4, 2024</span>{" "}
-                    </p>
-                  </div>
-                  <p>
-                    SUHORA and SatVu Form Multi-Year Strategic Alliance to
-                    Provide Spaceborne High Resolution Thermal Sensing and
-                    Analytics SUHORA and SatVu have entered into a multi-year
-                    strategic alliance to enhance spaceborne high-resolution
-                    thermal sensing and analytics. SUHORA specializes in space
-                    analytics, while SatVu leads in high-resolution thermal
-                    satellite imaging. This collaboration aims to deliver
-                    advanced solutions for defence, disaster management, and
-                    various governmental organizations by utilizing SatVu’s
-                    thermal data and SUHORA's analytic capabilities. This
-                    partnership is set to benefit users and industries in the
-                    region through innovative thermal sensing technology and
-                    comprehensive analytics.
-                  </p>
-                  <a href="javascript:void(0);" className="btn btn-light">
-                    Continue Reading
-                  </a>
-                </div>
+            <div className="modal-body">
+              <img
+                src={`${baseUrl}${selectedEvent?.image}`}
+                className="img-fluid mb-3"
+                alt={selectedEvent?.title}
+              />
+              <h6 className="modal-title">{selectedEvent?.title}</h6>
+              <div className="post-meta mt-3">
+                <p>
+                  <span>By Suhora</span> | <span>{formatDate(selectedEvent?.publish_at)}</span>
+                </p>
               </div>
-            </div> */}
+              <div dangerouslySetInnerHTML={{ __html: selectedEvent?.description }} />
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>

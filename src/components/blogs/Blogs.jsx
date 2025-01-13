@@ -1,43 +1,45 @@
 import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { baseUrl } from "../../base";
-import { Link } from "react-router-dom";
-
 
 export default function Blogs() {
   const [data, setData] = useState([]);
+  const [selectedBlog, setSelectedBlog] = useState(null);
 
   useEffect(() => {
-    fetch();
+    fetchBlogs();
   }, []);
 
-  const fetch = async () => {
+  const fetchBlogs = async () => {
     try {
       const res = await axios.get(`${baseUrl}/api/blogs`, {
         headers: {
-          'Authorization': `Bearer hsdguefg65sws%xsn$zsxs`  // Use Bearer token for authorization
-        }
+          Authorization: `Bearer hsdguefg65sws%xsn$zsxs`,
+        },
       });
-  
+
       // Filter published blogs
-      const updated = res.data.data.filter(item => item.status === 'published');
+      const updated = res.data.data.filter((item) => item.status === "published");
       setData(updated);
-      console.log("data", updated);
     } catch (error) {
-      console.log("error", error);
+      console.log("Error fetching blogs", error);
     }
   };
-  
 
-  // Function to format the date
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     const month = String(date.getMonth() + 1).padStart(2, "0");
     const day = String(date.getDate()).padStart(2, "0");
     const year = date.getFullYear();
-  
     return `${month}-${day}-${year}`;
+  };
+
+  console.log("selectedBlog", selectedBlog);
+  
+  const openModal = (blog) => {
+    setSelectedBlog(blog);
+    const modal = new window.bootstrap.Modal(document.getElementById("blogModal"));
+    modal.show();
   };
 
   return (
@@ -46,92 +48,71 @@ export default function Blogs() {
         <div className="blog-col-sec">
           <div className="row">
             <div className="title">
-              <h3>From the blog</h3>
+              <h3>From the Blog</h3>
             </div>
           </div>
           <div className="row">
+            {data.map((item, index) => (
+              <div className="col-md-6 card-col" key={index}>
+                <div className="card">
+                  <img
+                    src={`${baseUrl}${item.image}`}
+                    className="card-img-top"
+                    alt={item.title}
+                  />
+                  <div className="category">
+                    <p>{item.tags}</p>
+                  </div>
+                  <div className="card-body">
+                    <h3 className="card-title">{item.title}</h3>
+                    <div className="post-meta">
+                      <p>
+                        <span>By Suhora</span> | <span>{formatDate(item.publish_at)}</span>
+                      </p>
+                    </div>
+                    <button className="btn btn-primary" onClick={() => openModal(item)}>
+                      Continue Reading
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
-            {
-              data && data.map((item, index)=>{ 
-                return  (
-            <div className="col-md-6 card-col" key={index}>
-              <div className="card">
-                <img
-                  src={`${baseUrl}${item.image}`}
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="category">
-                  <p> {item.tags}</p>
-                </div>
-                <div className="card-body">
-                  <h3 className="card-title">
-                   {item.title}
-                  </h3>
-                  <div className="post-meta">
-                    <p>
-                      <span>By Suhora</span> |  <span>{formatDate(item.publish_at)}</span>{" "}
-                    </p>
-                  </div>
-                  <Link to={`/blogs/${item.id}`} className="btn btn-light">
-                    Continue Reading
-                  </Link>
-                </div>
-              </div>
+      {/* Bootstrap Modal */}
+      <div className="modal fade" id="blogModal" tabIndex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="blogModalLabel">
+                {selectedBlog?.title}
+              </h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-                )
-              })
-            }
-            {/* <div className="col-md-6 card-col">
-              <div className="card">
-                <img
-                  src="./assets/images/SUHORA-SatVu-Contract-Signing-e1717489162101.webp"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="category">
-                  <p> Events and News</p>
-                </div>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    SUHORA and SatVu form a multi-year strategic alliance to provide Spaceborne High Resolution Thermal Sensing and analytics
-                  </h3>
-                  <div className="post-meta">
-                    <p>
-                      <span>By Suhora</span> | <span>June 4, 2024</span>{" "}
-                    </p>
-                  </div>
-                  <a href="javascript:void(0);" className="btn btn-light">
-                    Continue Reading
-                  </a>
-                </div>
+            <div className="modal-body">
+              <img
+                src={`${baseUrl}${selectedBlog?.image}`}
+                className="img-fluid mb-3"
+                alt={selectedBlog?.title}
+              />
+              <br />
+              <h6 className="modal-title" id="blogModalLabel">
+                {selectedBlog?.title}
+              </h6>
+              <div className="post-meta mt-3">
+                <p>
+                  <span>By Suhora</span> | <span>{formatDate(selectedBlog?.publish_at)}</span>
+                </p>
               </div>
+              <div dangerouslySetInnerHTML={{ __html: selectedBlog?.description }} />
             </div>
-            <div className="col-md-6 card-col">
-              <div className="card">
-                <img
-                  src="./assets/images/blog-3-1.webp"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="category">
-                  <p> Events and News</p>
-                </div>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    How world’s first high resolution thermal Satellite can evolve mining industry?
-                  </h3>
-                  <div className="post-meta">
-                    <p>
-                      <span>By Suhora</span> | <span>April 3, 2024</span>{" "}
-                    </p>
-                  </div>
-                  <a href="javascript:void(0);" className="btn btn-light">
-                    Continue Reading
-                  </a>
-                </div>
-              </div>
-            </div> */}
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>

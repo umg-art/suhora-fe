@@ -401,7 +401,7 @@ function ImagingCapabilities() {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Your name"
+                    placeholder="Your Name"
                     aria-label="Your name"
                   />
                 </div>

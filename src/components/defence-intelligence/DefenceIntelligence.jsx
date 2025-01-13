@@ -163,7 +163,6 @@ function DefenceIntelligence() {
                         alt="color photo"
                       />
                     </div>
-                    {/* step="10" */}
                     <input
                       type="range"
                       min={0}
@@ -267,7 +266,7 @@ function DefenceIntelligence() {
                 <div className="card-img-overlay">
                   <h5 className="card-title">Multi-sensor tasking</h5>
                   <p className="card-text">
-                    Leverage multi-spectral <br /> imaging
+                    Leverage multi-spectral imaging
                   </p>
                 </div>
               </div>
@@ -312,7 +311,7 @@ function DefenceIntelligence() {
                 <div className="card-img-overlay">
                   <h5 className="card-title">Proactive Change mapping</h5>
                   <p className="card-text">
-                    Always 'on' change <br /> mapping
+                    Always 'on' change mapping
                   </p>
                 </div>
               </div>
@@ -355,7 +354,7 @@ function DefenceIntelligence() {
                 <div className="onion-layer-defence"></div>
                 <h1 className="title-card">
                   <span className="marg-bott">
-                    Maritime Domain Awarness
+                    Maritime Domain Awareness
                     <br />(<span>MIRKA MDA </span>)
                   </span>
                 </h1>
@@ -376,7 +375,7 @@ function DefenceIntelligence() {
                 <div className="overlay" />
                 <h1 className="title-card">
                   <span className="marg-bott">
-                    Terrain Situational Awarness <br /> (<span>MIRKA TSA</span>)
+                    Terrain Situational Awareness <br /> (<span>MIRKA TSA</span>)
                   </span>
                 </h1>
                 <h3 className="card-title subsubtitle">
@@ -435,7 +434,7 @@ function DefenceIntelligence() {
                   value={formData.name}
                   onChange={handleChange}
                   className="form-control"
-                  placeholder="Your name"
+                  placeholder="Your Name"
                   aria-label="Your name"
                 />
                 {errors.name && <small className="text-danger">{errors.name}</small>}

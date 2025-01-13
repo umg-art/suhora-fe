@@ -585,7 +585,7 @@ function DisasterInsurance() {
                   value={formData.name}
                   onChange={handleChange}
                   className="form-control"
-                  placeholder="Your name"
+                  placeholder="Your Name"
                   aria-label="Your name"
                 />
                 {errors.name && <small className="text-danger">{errors.name}</small>}

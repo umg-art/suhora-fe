@@ -552,7 +552,7 @@ function HomePage() {
                         <p className="card-text product-card-text">
                           A unified SaaS platform offering seamless access to
                           250 + sensors encompassing optical thermal and SAR
-                          data enabling users to to explore, task and analyze
+                          data enabling users to explore, task and analyze
                           satellite data for a spectrum of applications.
                         </p>
                         <Link to="/imaging-capabilities" target="_blank" className="btn btn-primary">

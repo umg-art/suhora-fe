@@ -124,10 +124,10 @@ p.card-text {
     display: block !important;
   }
   .mission-vission {
-    height: 90vh !important;
+    height: 80vh !important;
   }
   .onion-mission {
-    height: 90vh !important;
+    height: 80vh !important;
   }
 }
 
@@ -1806,7 +1806,7 @@ section.sid-section.our-product h4 {
 .mission-vission {
   background-image: url("../images/Mission-Vision Image.png");
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1816,8 +1816,11 @@ section.sid-section.our-product h4 {
 .onion-mission {
   position: absolute;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  height: 100vh;
+  height: 80vh;
   background-color: rgba(0, 0, 0, 0.486);
 }
 .mission-vission hr {
