@@ -243,11 +243,11 @@ function DisasterInsurance() {
                 <span>Predict</span> | <span>Observe</span> | <span>Act</span>{" "}
               </h4>
               <p>
-                With its cutting-edge risk evalution capabilities, SID empowers
-                stakeholders to make precise, data-driven decision that
+                With its cutting-edge risk evaluation capabilities, SID empowers
+                stakeholders to make precise, data-driven decisions that
                 strengthen disaster response and resilience towards financial
                 risk. By empowering communities, industries, and governments
-                with advanced analytical tools, SID, enhances preparedness and
+                with advanced analytical tools, SID enhances preparedness and
                 resilience against natural catastrophes, ensuring a safer and a
                 more secure future.{" "}
               </p>

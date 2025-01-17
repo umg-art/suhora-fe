@@ -1,5 +1,4 @@
-import axios from "axios";
-import { useEffect,useState } from "react";
+import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { baseUrl } from "../../base";
@@ -90,15 +89,6 @@ function DefenceIntelligence() {
     }
   };
 
-  // useEffect(() => {
-  //   const container = document.querySelector(".image-col .container");
-  //   document
-  //     .querySelector(".image-col .slider")
-  //     .addEventListener("input", (e) => {
-  //       container.style.setProperty("--position", `${e.target.value}%`);
-  //     });
-  //   window.scrollTo(0, 0);
-  // }, [$]);
   return (
     <>
      <ToastContainer />
@@ -244,10 +234,6 @@ function DefenceIntelligence() {
             </div>
           </div>
 
-          {/* <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage style={{filter:"grayscale(100%)"}} className="" src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image one" />}
-                itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image two" />}
-             /> */}
           <div className="row card-image-col">
             <h4>
               With <span>MIRKA </span> gain actionable Intelligence
@@ -366,12 +352,12 @@ function DefenceIntelligence() {
                 <h1 className="title-card">
                   <span className="marg-bott">
                     Maritime Domain Awareness
-                    <br />(<span>MIRKA MDA </span>)
+                    <br />(<span>MIRKA MDA</span>)
                   </span>
                 </h1>
                 <h3 className="card-title subsubtitle">
                   <span>
-                    Maritime Domain Awareness (<span>MIRKA</span> MDA) - Mikra
+                    Maritime Domain Awareness (<span>MIRKA</span> MDA) - Mirka
                     provides advanced maritime domain awareness through
                     continuous large-scale monitoring using wide swath satellite
                     data. Our vessel and ship detection services offer real-time
