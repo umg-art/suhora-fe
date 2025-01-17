@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer
       style={{
-        backgroundImage: "url(../assets/images/Footer.png)",
+        backgroundImage: "url(../assets/images/Footer.webp)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

@@ -259,12 +259,12 @@ function DisasterInsurance() {
                     <div className="image-container product-slider">
                       <img
                         className="diaster-image-before slider-image"
-                        src="./assets/images/Disaster_slider1.jpg"
+                        src="./assets/images/Disaster_slider1.webp"
                         alt="Disaster_slider1"
                       />
                       <img
                         className="image-after slider-image"
-                        src="./assets/images/Disaster_slider2.jpg"
+                        src="./assets/images/Disaster_slider2.webp"
                         alt="Disaster_slider2"
                       />
                     </div>
@@ -352,7 +352,7 @@ function DisasterInsurance() {
                 <div
                   className="card"
                   style={{
-                    backgroundImage: 'url("./assets/images/Flood.png")',
+                    backgroundImage: 'url("./assets/images/Flood.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                   }}
@@ -366,7 +366,7 @@ function DisasterInsurance() {
                 <div
                   className="card"
                   style={{
-                    backgroundImage: 'url("./assets/images/Landsclide.png")',
+                    backgroundImage: 'url("./assets/images/Landsclide.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                   }}
@@ -380,7 +380,7 @@ function DisasterInsurance() {
                 <div
                   className="card"
                   style={{
-                    backgroundImage: 'url("./assets/images/GLOF.png")',
+                    backgroundImage: 'url("./assets/images/GLOF.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                   }}
@@ -394,7 +394,7 @@ function DisasterInsurance() {
                 <div
                   className="card"
                   style={{
-                    backgroundImage: 'url("./assets/images/Hail Strom.png")',
+                    backgroundImage: 'url("./assets/images/Hail Strom.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                   }}
@@ -408,7 +408,7 @@ function DisasterInsurance() {
                 <div
                   className="card"
                   style={{
-                    backgroundImage: 'url("./assets/images/Forest Fire.png")',
+                    backgroundImage: 'url("./assets/images/Forest Fire.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                   }}
@@ -423,7 +423,7 @@ function DisasterInsurance() {
                   className="card"
                   style={{
                     backgroundImage:
-                      'url("./assets/images/Land deformation.png")',
+                      'url("./assets/images/Land deformation.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                   }}

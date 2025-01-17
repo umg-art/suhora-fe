@@ -142,8 +142,8 @@ function DefenceIntelligence() {
             <div className="col-lg-6">
               <div className="image-col h-100">
               <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage style={{filter:"grayscale(100%)"}} className="" src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image one" />}
-                itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider.jpg" srcSet="./assets/images/mirka-slider.jpg" alt="Image two" />}
+                itemOne={<ReactCompareSliderImage style={{filter:"grayscale(100%)"}} className="" src="./assets/images/mirka-slider.webp" srcSet="./assets/images/mirka-slider.webp" alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider.webp" srcSet="./assets/images/mirka-slider.webp" alt="Image two" />}
              />
                 {/* <main className="h-100">
                   <div className="container h-100">
@@ -241,7 +241,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/01_Tip and Cue.png"
+                  src="./assets/images/01_Tip and Cue.webp"
                   className="card-img"
                   alt="..."
                 />
@@ -256,7 +256,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/02_multisensor tasking.png"
+                  src="./assets/images/02_multisensor tasking.webp"
                   className="card-img"
                   alt="..."
                 />
@@ -271,7 +271,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/03_near real time.png"
+                  src="./assets/images/03_near real time.webp"
                   className="card-img"
                   alt="..."
                 />
@@ -286,7 +286,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/04_ML Based.png"
+                  src="./assets/images/04_ML Based.webp"
                   className="card-img"
                   alt="..."
                 />
@@ -301,7 +301,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/05_Proactive Change.png"
+                  src="./assets/images/05_Proactive Change.webp"
                   className="card-img"
                   alt="..."
                 />
@@ -316,7 +316,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/06_cross-sensor.png"
+                  src="./assets/images/06_cross-sensor.webp"
                   className="card-img"
                   alt="..."
                 />

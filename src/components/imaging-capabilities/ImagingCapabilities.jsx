@@ -70,12 +70,12 @@ function ImagingCapabilities() {
                     <div className="image-container product-slider">
                       <img
                         className="diaster-image-before slider-image"
-                        src="./assets/images/Spade_Slider1.jpg"
+                        src="./assets/images/Spade_Slider1.webp"
                         alt="color photo"
                       />
                       <img
                         className="image-after slider-image"
-                        src="./assets/images/Spade_Slider2.jpg"
+                        src="./assets/images/Spade_Slider2.webp"
                         alt="black and white"
                       />
                     </div>
@@ -158,7 +158,7 @@ function ImagingCapabilities() {
             <div className="col-lg-4 mt-3">
               <div className="card">
                 <img
-                  src="./assets/images/explore-image.jpg"
+                  src="./assets/images/explore-image.webp"
                   className="card-img-top"
                   alt="..."
                 />
@@ -180,7 +180,7 @@ function ImagingCapabilities() {
             <div className="col-lg-4 mt-3">
               <div className="card">
                 <img
-                  src="./assets/images/Task.png"
+                  src="./assets/images/Task.webp"
                   className="card-img-top"
                   alt="..."
                 />
@@ -202,7 +202,7 @@ function ImagingCapabilities() {
             <div className="col-lg-4 mt-3">
               <div className="card">
                 <img
-                  src="./assets/images/Analyse-image.jpg"
+                  src="./assets/images/Analyse-image.webp"
                   className="card-img-top"
                   alt="..."
                 />
@@ -274,7 +274,7 @@ function ImagingCapabilities() {
               <div className="card">
                 <Link to="/image-library">
                   <img
-                    src="./assets/images/Optical_thumbnail.png"
+                    src="./assets/images/Optical_thumbnail.webp"
                     className="card-img-top"
                     alt="..."
                   />
@@ -288,7 +288,7 @@ function ImagingCapabilities() {
               <div className="card">
                 <Link to="/image-library">
                   <img
-                    src="./assets/images/SAR_thumbnail.png"
+                    src="./assets/images/SAR_thumbnail.webp"
                     className="card-img-top"
                     alt="..."
                   />
@@ -302,7 +302,7 @@ function ImagingCapabilities() {
               <div className="card">
                 <Link to="/image-library">
                   <img
-                    src="./assets/images/Thermal_thumbnail.png"
+                    src="./assets/images/Thermal_thumbnail.webp"
                     className="card-img-top"
                     alt="..."
                   />
@@ -316,7 +316,7 @@ function ImagingCapabilities() {
               <div className="card">
                 <Link to="/image-library">
                   <img
-                    src="./assets/images/DSM-DTM_thumbnail.png"
+                    src="./assets/images/DSM-DTM_thumbnail.webp"
                     className="card-img-top"
                     alt="..."
                   />

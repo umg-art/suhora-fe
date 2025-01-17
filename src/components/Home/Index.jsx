@@ -410,7 +410,7 @@ function HomePage() {
             <div
               className="slick-slide text-right bg-why-suhora-img"
               style={{
-                backgroundImage: 'url("./assets/images/Multi sensor.jpg")',
+                backgroundImage: 'url("./assets/images/Multi sensor.webp")',
                 backgroundSize : 'cover',
               }}
             >
@@ -435,7 +435,7 @@ function HomePage() {
             <div
               className="slick-slide text-right bg-why-suhora-img"
               style={{
-                backgroundImage: 'url("./assets/images/Near Real time.jpg")',
+                backgroundImage: 'url("./assets/images/Near Real time.webp")',
                 backgroundSize : 'cover',
               }}
             >
@@ -459,7 +459,7 @@ function HomePage() {
             <div
               className="slick-slide text-right bg-why-suhora-img"
               style={{
-                backgroundImage: 'url("./assets/images/Higher accuracy.jpg")',
+                backgroundImage: 'url("./assets/images/Higher accuracy.webp")',
                 backgroundSize : 'cover',
               }}
             >
@@ -483,7 +483,7 @@ function HomePage() {
               className="slick-slide text-right bg-why-suhora-img"
               style={{
                 backgroundImage:
-                  'url("./assets/images/Insightful Analysis.jpg")',
+                  'url("./assets/images/Insightful Analysis.webp")',
                   backgroundSize : 'cover',
               }}
             >
@@ -541,7 +541,7 @@ function HomePage() {
                     <div
                       className="card"
                       style={{
-                        backgroundImage: 'url("./assets/images/spade.png")',
+                        backgroundImage: 'url("./assets/images/spade.webp")',
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                       }}
@@ -565,7 +565,7 @@ function HomePage() {
                     <div
                       className="card"
                       style={{
-                        backgroundImage: 'url("./assets/images/mirka.png")',
+                        backgroundImage: 'url("./assets/images/mirka.webp")',
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                       }}
@@ -758,7 +758,7 @@ function HomePage() {
       <section
         className="testimonial-section"
         style={{
-          backgroundImage: "url(./assets/images/Testimonial-BG-blck.png)",
+          backgroundImage: "url(./assets/images/Testimonial-BG-blck.webp)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}

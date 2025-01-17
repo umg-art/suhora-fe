@@ -146,7 +146,7 @@ export default function AboutUs() {
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
-                        src="./assets/images/Krishanu_card1-image.png"
+                        src="./assets/images/Krishanu_card1-image.webp"
                         className="img-fluid rounded-start"
                         alt="..."
                       />
@@ -173,7 +173,7 @@ export default function AboutUs() {
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
-                        src="./assets/images/Rupesh_founders.png"
+                        src="./assets/images/Rupesh_founders.webp"
                         className="img-fluid rounded-start"
                         alt="..."
                       />
@@ -201,7 +201,7 @@ export default function AboutUs() {
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
-                        src="./assets/images/Amit_founders.png"
+                        src="./assets/images/Amit_founders.webp"
                         className="img-fluid rounded-start"
                         alt="..."
                       />
@@ -398,7 +398,7 @@ export default function AboutUs() {
           <div className="row gallery-section gallery-section-ourteam">
             <img
               className="img-fluid p-2 mx-auto"
-              src="./assets/images/Team-image-3-about-us.JPG"
+              src="./assets/images/Team-image-3-about-us.webp"
             />
           </div>
 

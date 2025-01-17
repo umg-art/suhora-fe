@@ -124,10 +124,10 @@ p.card-text {
     display: block !important;
   }
   .mission-vission {
-    height: 80vh !important;
+    height: 100vh !important;
   }
   .onion-mission {
-    height: 80vh !important;
+    height: 100vh !important;
   }
 }
 
@@ -280,7 +280,7 @@ p.card-text {
 
 @media (max-width: 768px) {
   .sid-section .sid-text-col {
-    max-height: 515px !important;
+    max-height: 570px !important;
   }
   .home-text {
     font-size: 30px !important;
@@ -354,7 +354,7 @@ p.card-text {
 }
 
 .about-us {
-  background-image: url("../images/About-Us-BG-blue.png");
+  background-image: url("../images/About-Us-BG-blue.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1061,7 +1061,7 @@ footer .footer-sec .address p {
   font-size: 26px;
 }
 section.career-banner {
-  background: url("../images/Career-banner.jpg");
+  background: url("../images/Career-banner.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1494,7 +1494,7 @@ section.sid-section.our-product h4 {
   padding: 50px 0;
 }
 .bg-with-text {
-  background-image: url("../images/Stay-Ahead-with-Timely-Insights.jpg");
+  background-image: url("../images/Stay-Ahead-with-Timely-Insights.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -1585,7 +1585,7 @@ section.sid-section.our-product h4 {
 
 /*defence-intelligence.html*/
 .sub-top-image-banner.defence-intelligence-banner {
-  background-image: url(../images/defence-banner.png);
+  background-image: url(../images/defence-banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
   /* min-height: 700px; */
@@ -1656,7 +1656,7 @@ section.sid-section.our-product h4 {
 
 .image-slider-with-animation .content {
   background: transparent;
-  background-image: url("../images/01_MDA.jpg");
+  background-image: url("../images/01_MDA.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1684,7 +1684,7 @@ section.sid-section.our-product h4 {
 
 .image-slider-with-animation .content:nth-of-type(2) {
   background: transparent;
-  background-image: url("../images/02_TSA.jpg");
+  background-image: url("../images/02_TSA.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1692,7 +1692,7 @@ section.sid-section.our-product h4 {
 
 .image-slider-with-animation .content:nth-of-type(3) {
   background: transparent;
-  background-image: url("../images/03_MapVyuh.jpg");
+  background-image: url("../images/03_MapVyuh.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1773,7 +1773,7 @@ section.sid-section.our-product h4 {
 
 /*About us*/
 .sub-top-image-banner {
-  background-image: url("../images/about_suhora_tap_banner_without_text.jpg");
+  background-image: url("../images/about_suhora_tap_banner_without_text.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1804,7 +1804,7 @@ section.sid-section.our-product h4 {
   height: 100%;
 }
 .mission-vission {
-  background-image: url("../images/Mission-Vision Image.png");
+  background-image: url("../images/Mission-Vision Image.webp");
   width: 100%;
   height: 80vh;
   background-color: #000;
@@ -2055,7 +2055,7 @@ section.sid-section.our-product h4 {
   margin-bottom: -70px;
 }
 .sub-top-image-banner.imaging-capabilities-banner {
-  background-image: url(../images/Spade_Header.jpg);
+  background-image: url(../images/Spade_Header.webp);
   background-size: cover;
   background-repeat: no-repeat;
   /* min-height: 700px; */
@@ -2310,6 +2310,12 @@ section.sid-section.our-product h4 {
   .image-slider-with-animation .general-container {
     flex-direction: column;
     min-height: 40rem;
+  }
+  .contact-us-section .form-main-wrapper {
+    padding: 20px !important;
+  }
+  .aboutus-page .line-height-normal {
+    padding: 0 !important;
   }
   .image-slider-with-animation .radio:hover + .content,
   .image-slider-with-animation .content {
