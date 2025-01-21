@@ -1,3 +1,0 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-public/assets/images/01_Tip[[:space:]]and[[:space:]]Cue.png filter=lfs diff=lfs merge=lfs -text
